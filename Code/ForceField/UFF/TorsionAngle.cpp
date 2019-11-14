@@ -211,7 +211,7 @@ double TorsionAngleContrib::getEnergy(double *pos) const {
   return res;
 }
 
-void TorsionAngleContrib::getEnergyTerm(double *pos, std::vector<double> &resvec) const {
+void TorsionAngleContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const {
   PRECONDITION(dp_forceField, "no owner");
   PRECONDITION(pos, "bad vector");
   PRECONDITION(d_order == 2 || d_order == 3 || d_order == 6, "bad order");

@@ -136,7 +136,7 @@ double InversionContrib::getEnergy(double *pos) const {
   return res;
 }
 
-void InversionContrib::getEnergyTerm(double *pos, std::vector<double> &resvec) const {
+void InversionContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const {
   PRECONDITION(dp_forceField, "no owner");
   PRECONDITION(pos, "bad vector");
 

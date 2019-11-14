@@ -67,7 +67,7 @@ double vdWContrib::getEnergy(double *pos) const {
   return res;
 }
 
-void vdWContrib::getEnergyTerm(double *pos, std::vector<double> &resvec) const {
+void vdWContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const {
   PRECONDITION(dp_forceField, "no owner");
   PRECONDITION(pos, "bad vector");
 

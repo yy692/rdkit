@@ -142,7 +142,7 @@ double AngleBendContrib::getEnergy(double *pos) const {
   return res;
 }
 
-void AngleBendContrib::getEnergyTerm(double *pos, std::vector<double> &resvec) const {
+void AngleBendContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const {
   PRECONDITION(dp_forceField, "no owner");
   PRECONDITION(pos, "bad vector");
 
