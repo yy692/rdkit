@@ -85,8 +85,8 @@ void BondStretchContrib::getEnergyTerms(double *pos, std::vector<double> &resvec
   double res = 0.5 * d_forceConstant * distTerm * distTerm;
 
   resvec.push_back(2.0);
-  resvec.push_back(double(d_end1Idx));
-  resvec.push_back(double(d_end2Idx));
+//  resvec.push_back(double(d_end1Idx));
+//  resvec.push_back(double(d_end2Idx));
   resvec.push_back(res);
   resvec.push_back(0.0);
   resvec.push_back(0.0);

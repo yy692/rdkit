@@ -74,8 +74,8 @@ void vdWContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const 
   double dist = dp_forceField->distance(d_at1Idx, d_at2Idx, pos);
   if (dist > d_thresh || dist <= 0.0) {
     resvec.push_back(1.0);
-    resvec.push_back(double(d_at1Idx));
-    resvec.push_back(double(d_at2Idx));
+//    resvec.push_back(double(d_at1Idx));
+//    resvec.push_back(double(d_at2Idx));
     resvec.push_back(0.0);
     resvec.push_back(0.0);
     resvec.push_back(0.0);
@@ -90,8 +90,8 @@ void vdWContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) const 
   // "-" << d_at2Idx << " " << r << " = " << res << std::endl;
   
   resvec.push_back(1.0);
-  resvec.push_back(double(d_at1Idx));
-  resvec.push_back(double(d_at2Idx));
+//  resvec.push_back(double(d_at1Idx));
+//  resvec.push_back(double(d_at2Idx));
   resvec.push_back(res);
   resvec.push_back(0.0);
   resvec.push_back(0.0);

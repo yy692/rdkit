@@ -159,10 +159,10 @@ void InversionContrib::getEnergyTerms(double *pos, std::vector<double> &resvec) 
   // "," << d_at4Idx + 1 << " Inversion: " << res << std::endl;
 
   resvec.push_back(5.0);
-  resvec.push_back(double(d_at1Idx));
-  resvec.push_back(double(d_at2Idx));
-  resvec.push_back(double(d_at3Idx));
-  resvec.push_back(double(d_at4Idx));
+//  resvec.push_back(double(d_at1Idx));
+//  resvec.push_back(double(d_at2Idx));
+//  resvec.push_back(double(d_at3Idx));
+//  resvec.push_back(double(d_at4Idx));
   resvec.push_back(res);
 }
 
