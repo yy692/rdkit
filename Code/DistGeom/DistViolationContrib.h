@@ -38,6 +38,7 @@ class RDKIT_DISTGEOMETRY_EXPORT DistViolationContrib
   double getEnergy(double *pos) const;
 
   void getGrad(double *pos, double *grad) const;
+  double getEnergyTerms(double *pos) const;
   virtual DistViolationContrib *copy() const {
     return new DistViolationContrib(*this);
   };

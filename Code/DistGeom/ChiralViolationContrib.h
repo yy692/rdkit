@@ -39,11 +39,11 @@ class RDKIT_DISTGEOMETRY_EXPORT ChiralViolationContrib
 
   //! return the contribution of this contrib to the energy of a given state
   double getEnergy(double *pos) const;
-  double getEnergyTerms(double *pos) const;
 
   //! calculate the contribution of this contrib to the gradient at a given
   // state
   void getGrad(double *pos, double *grad) const;
+  double getEnergyTerms(double *pos) const;
   virtual ChiralViolationContrib *copy() const {
     return new ChiralViolationContrib(*this);
   };

@@ -47,8 +47,8 @@ class RDKIT_FORCEFIELD_EXPORT RDKIT_FORCEFIELD_EXPORT TorsionAngleContrib
                       unsigned int idx3, unsigned int idx4,
                       const MMFFTor *mmffTorParams);
   double getEnergy(double *pos) const;
-  double getEnergyTerms(double *pos) const;
   void getGrad(double *pos, double *grad) const;
+  double getEnergyTerms(double *pos) const;
   virtual TorsionAngleContrib *copy() const {
     return new TorsionAngleContrib(*this);
   };

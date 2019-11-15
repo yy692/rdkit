@@ -41,9 +41,9 @@ class RDKIT_FORCEFIELD_EXPORT InversionContrib : public ForceFieldContrib {
                    bool isCBoundToO, double oobForceScalingFactor = 1.0);
 
   double getEnergy(double *pos) const;
-  double getEnergyTerms(double *pos) const;
 
   void getGrad(double *pos, double *grad) const;
+  double getEnergyTerms(double *pos) const;
   virtual InversionContrib *copy() const {
     return new InversionContrib(*this);
   };
